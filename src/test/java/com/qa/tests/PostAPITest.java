@@ -34,7 +34,6 @@ public class PostAPITest extends TestBase {
 		testBase = new TestBase();
 		serviceUrl = prop.getProperty("URL");
 		apiUrl = prop.getProperty("serviceURL");
-		//https://reqres.in/api/users
 		
 		url = serviceUrl + apiUrl;
 		
@@ -50,7 +49,7 @@ public class PostAPITest extends TestBase {
 		
 		//jackson API:
 		ObjectMapper mapper = new ObjectMapper();
-		Users users = new Users("Sindhusha", "TestEngineer"); //expected users obejct
+		Users users = new Users("Sindhusha", "TestEngineer"); 
 		
 		//object to json file:
 		mapper.writeValue(new File("/Users/Sindhusha_Pericharla/eclipse-workspace/restapi/src/main/java/com/qa/data/users.json"), users);
